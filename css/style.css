@@ -1,0 +1,287 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap');
+
+/* GLOBAL */
+:root {
+    --color-black: #3A3A3A;
+    --color-lighter-black: #484848;
+    --color-red: #D96B52;
+    --light-grey: #F8F8F8;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: ease-in-out .17s;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+a,p {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    background-image: url('../images/diensten-header.png');
+    height: 20vh;
+    min-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.button {
+    background-color: var(--color-red);
+    color: white !important;
+    border: none;
+    padding: .6rem 1rem;
+    font-weight: 600;
+}
+
+.button#effect:hover {
+    color: white !important;
+}
+
+.button:hover {
+    background-color: #ca573e;
+}
+
+.button:focus {
+    outline: none;
+    color: white !important;
+}
+
+.button#active {
+    color: white !important;
+}
+
+a.effect {
+    color: white !important;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.effect:hover {
+    color: #d2d2d2 !important;
+}
+
+a.effect2 {
+    color: var(--color-red) !important;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.effect2:hover {
+    color: #b85e4a !important;
+}
+
+a.effect3 {
+    color: black !important;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.effect3:hover {
+    color: #303030 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+/* NAVIGATION */
+.upper-header {
+    background-color: var(--color-lighter-black) !important;
+    color: white;
+}
+
+.upper-header p {
+    margin: 0 !important;
+}
+
+.navbar {
+    min-height: 90px;
+    background-color: var(--color-black) !important;
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+body > nav > div > button {
+    border: none !important;
+    color: white !important;
+    outline: none;
+}
+
+body > nav > div > button:focus {
+    outline: none;
+}
+
+#active {
+    color: var(--color-red) !important;
+}
+
+@media only screen and (max-width: 450px) {
+    body > nav > div > a {
+        font-size: 16px !important;
+    }
+    .nav-link {
+        padding: 1.3rem 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-link.button {
+        background-color: transparent !important;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    .button#active {
+        color: var(--color-red) !important;
+    }
+    .navbar-brand {
+        transform: translateX(0);
+        left: 0;
+        position: unset;
+        text-align: left !important;
+    }
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* DIENSTEN */
+.diensten {
+    background-color: rgba(58, 58, 58, 0.14);
+    border-top: 1px solid rgba(217, 107, 82, 0.5);
+    border-bottom: 1px solid rgba(217, 107, 82, 0.5);
+    height: 450px;
+    width: 100vw;
+}
+
+.diensten-cards {
+    margin: 0 auto;
+}
+
+.diensten-card {
+    max-width: 300px;
+    background-color: white;
+    padding: 2em;
+    border-bottom: 7px solid var(--color-black);
+    -webkit-box-shadow: 5px 5px 17px 3px rgba(0,0,0,0.27);
+    box-shadow: 5px 5px 17px 3px rgba(0,0,0,0.27);
+}
+
+@media only screen and (max-width: 991px) {
+    .diensten-wrapper {
+        display: block !important;
+    }
+
+    .diensten {
+        height: 1300px;
+    }
+
+    .diensten-card {
+        margin-right: 0 !important;
+        margin-bottom: 2rem;
+    }
+}
+
+/* ABOUT */
+.about-1, .about-2 {
+    min-height: 30vh;
+}
+
+.about-1.col-lg-6 {
+    padding: 0 !important;
+}
+
+.about-1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about-2 {
+    background-color: var(--light-grey);
+}
+
+/* RECENTIES */
+
+.recentie {
+    max-width: 305px;
+    margin-right: 30px;
+    background-color: var(--light-grey);
+}
+
+.recentie.last {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .recentie-wrapper {
+        margin: 2rem auto !important;
+        display: block !important;
+    }
+
+    .recentie {
+        margin: 2rem auto !important;
+    }
+}
+
+/* DIENSTEN */
+.diensten-1, .diensten-2 {
+    min-height: 30vh;
+    max-height: 600px;
+}
+
+.diensten-1.col-lg-6 {
+    padding: 0 !important;
+}
+
+.diensten-1 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.diensten-2 {
+    background-color: var(--light-grey);
+}
+
+@media (max-width: 991px) {
+    .reversed {
+        -ms-flex-direction: column-reverse !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .diensten-1, diensten-1 img {
+        min-height: 0;
+        height: 50vw;
+    }
+
+    .diensten-2 h2 {
+        font-size: 24px;
+    }
+
+}

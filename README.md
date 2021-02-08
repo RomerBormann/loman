@@ -1,3 +1,3 @@
 # Loman Onderhoud, bedrijfswebsite
 
-http://loman-onderhoud.nl/
+https://loman-onderhoud.nl/
